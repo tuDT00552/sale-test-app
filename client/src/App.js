@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <ul className="list">
+      <div className="list"  style={{ margin: '0 15px' }}>
         <h1>Xốp Be 1 Ngìn™</h1><spam>Version 1 dang update ...</spam>
         <hr></hr>
         {(products && products.length > 0) ? (
@@ -51,7 +51,7 @@ function App() {
         ) : (
           <p>Chua hien thi san pham, cho ti nke .....</p>
         )}
-      </ul>
+      </div>
     </div>
   );
 }
