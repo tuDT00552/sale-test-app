@@ -26,7 +26,7 @@ function App() {
             <div style={{ padding: '10px' }}>
               <img src={"https://cf.shopee.vn/file/" + product.image} width="100%"></img>
               {/* <img src="https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg" width="100%"></img> */}
-              <strong style={{ ['font-size']: '9px' }} className="product__price">{product.price.toString().substring(0, 4)} VND</strong>
+              <strong style={{ ['font-size']: '9px' }} className="product__price">{product.price.toString().substring(product.price.toString().length - 5, product.price.toString().length)} VND</strong>
             </div>
             <div style={{
               ['font-size']: '10px', padding: '5px', ['white-space']: 'nowrap',
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="list"  style={{ margin: '0 15px' }}>
+      <div className="list" style={{ margin: '0 15px' }}>
         <h1>Xốp Be 1 Ngìn™</h1><spam>Version 1 dang update ...</spam>
         <hr></hr>
         {(products && products.length > 0) ? (
