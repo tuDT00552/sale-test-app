@@ -23,7 +23,7 @@ function App() {
       <div style={{ width: '20%', float: 'left' }} key={product._id} className="list__item product">
         <a style={{ ['text-decoration']: 'none', ['font-weight']: 'bold', ['text-align']: 'center' }} target="_blank" href={"https://shopee.vn/" + product.name + "-i." + product.shopid + "." + product.itemid}>
           <div style={{ padding: '10px' }}>
-            <img src={"https://cf.shopee.vn/file/" + product.image} width="100"></img>
+            <img src={"https://cf.shopee.vn/file/" + product.image} width="100%"></img>
             {/* <img src="https://kb.rspca.org.au/wp-content/uploads/2018/11/golder-retriever-puppy.jpeg" width="100%"></img> */}
             <strong style={{ ['font-size']: '9px' }} className="product__price">{product.price.toString().substring(0, 4)} VND</strong>
           </div>
